@@ -124,9 +124,14 @@ function Registration() {
     navigate("/");
   })
   .catch((error) => {
-    console.error(error.response?.data?.error || "Registration failed");
-    setError({ ...error.response?.data });
+  const errMsg = error.response?.data?.error || "Registration failed";
+  setError({
+    emailValid: true,
+    passwordErrors: [],
+    phErrors: [],
+    duplicateEmail: errMsg === "Email already exists" ? errMsg : "",
   });
+});
             }
             };
 
@@ -170,6 +175,10 @@ function Registration() {
                 {error && error.emailValid === false && (
                   <p style={{ color: "red" }}>Invalid email address.</p>
                 )}
+                {error && error.duplicateEmail && (
+  <p style={{ color: "red" }}>{error.duplicateEmail}</p>
+)}
+
               </div>
 
               <div className="mb-3">
