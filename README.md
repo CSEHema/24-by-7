@@ -1,5 +1,5 @@
 
-✅ React Login & Register System – Local Setup Guide 
+✅ ***React Login & Register System – Local Setup Guide*** 
 
 This project has two main folders:
 
@@ -7,7 +7,7 @@ This project has two main folders:
 
 *server* → Backend (Node.js + Express + MySQL)
 
-⚙️ Prerequisites 
+⚙️ # Prerequisites 
 
 Node.js & npm installed
 
@@ -21,10 +21,10 @@ Navigate to the client folder:
 
 Install dependencies:
 
-**npm install axios 
-npm install react-router-dom 
-npm install react-phone-input-2 
-npm install libphonenumber-js** 
+**npm install axios** 
+**npm install react-router-dom** 
+**npm install react-phone-input-2** 
+**npm install libphonenumber-js** 
 
 Start the development server:
 
@@ -38,17 +38,17 @@ Navigate to the server folder:
 
 Install dependencies:
 
-**npm install express 
-npm install cors 
-npm install mysql2 
-npm install bcryptjs**
+**npm install express** 
+**npm install cors** 
+**npm install mysql2** 
+**npm install bcryptjs**
 
 Create a .env file in the server folder:
 
-**DB_HOST=localhost
-DB_USER=your_mysql_username 
-DB_PASSWORD=your_mysql_password 
-DB_NAME=your_database_name** 
+**DB_HOST=localhost**
+**DB_USER=your_mysql_username** 
+**DB_PASSWORD=your_mysql_password** 
+**DB_NAME=your_database_name** 
 
 Start the backend server:
 
