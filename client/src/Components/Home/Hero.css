@@ -1,0 +1,79 @@
+.home-top-section {
+  background-color: #198754; /* Bootstrap green */
+  color: white;
+  padding-bottom: 2rem; /* so green extends past Hero */
+}
+
+.hero-container {
+  min-height: 70vh; /* adjust height */
+  position: relative;
+}
+
+.lottie-animation {
+  position: absolute;
+  z-index: 0;
+  width: 150px;
+}
+
+/* Small screens (mobile) */
+@media (max-width: 576px) {
+  .lottie-top-left { top: 5%; left: 5%; width: 100px; height: 100px; }
+  .lottie-bottom-right { bottom: 5%; right: 5%; width: 150px; height: 150px; }
+  .lottie-bottom-left { bottom: 5%; left: 5%; width: 100px; height: 100px; }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .lottie-top-left { top: 10px; left: 10px; width: 150px; height: 150px; }
+  .lottie-bottom-right { bottom: 10px; right: 10px; width: 200px; height: 200px; }
+  .lottie-bottom-left { bottom: 10px; left: 10px; width: 150px; height: 150px; }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 993px) {
+  .lottie-top-left { top: 20px; left: 20px; width: 200px; height: 200px; }
+  .lottie-bottom-right { bottom: 20px; right: 20px; width: 300px; height: 300px; }
+  .lottie-bottom-left { bottom: 20px; left: 20px; width: 200px; height: 200px; }
+}
+
+.text-big{
+  font-size: 50px;
+}
+.btn-lightgreen{
+  background-color: #33cd18;
+}
+.s-mid{
+  font-size: 20px;
+}
+.text-green{
+  color:#33cd18;
+}
+
+.tangled-btn {
+  position: relative;
+  padding: 10px 20px;
+  background: rgb(10, 228, 64);
+  color: #f3ece8;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  border: 1px solid #f7f0eb;
+  border-radius: 8px;
+}
+
+.tangled-btn::before, .tangled-btn::after{
+  content: "";
+  position: absolute;
+  inset: -6px; /* Space for the outer border */
+  border: 3px solid #f7f0eb; /* Outer border */
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.tangled-btn::before {
+  transform: translateX(-5px) translateY(3px);
+}
+.tangled-btn::after{
+  transform: translateX(5px) translateY(-1px);
+}
+

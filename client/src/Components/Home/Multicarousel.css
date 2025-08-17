@@ -1,0 +1,51 @@
+/* Constrain carousel width and center it */
+#multiItemCarousel {
+  max-width: 1000px;   /* Adjust as per your layout */
+  margin: 0 auto;      /* Center horizontally */
+  position: relative;
+}
+
+/* Ensure items never exceed carousel area */
+#multiItemCarousel .carousel-inner {
+  padding: 20px 40px; /* leaves space so cards don’t touch arrows */
+}
+
+/* Style the control icons */
+#multiItemCarousel .carousel-control-prev-icon,
+#multiItemCarousel .carousel-control-next-icon {
+  filter: invert(1) brightness(1.2); /* white + brighter */
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Hover effect for arrows */
+#multiItemCarousel .carousel-control-prev:hover,
+#multiItemCarousel .carousel-control-next:hover {
+  background: rgba(243, 239, 239, 0.2); /* subtle dark circle behind */
+  border-radius: 50%;
+}
+
+/* Cards styling */
+#multiItemCarousel .card {
+  flex: 0 0 32%; /* 3 cards fit in one row */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+#multiItemCarousel .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive: stack cards on smaller screens */
+@media (max-width: 768px) {
+  #multiItemCarousel .card {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
+
+  #multiItemCarousel .carousel-inner {
+    padding: 20px; /* tighter padding on small screens */
+  }
+}

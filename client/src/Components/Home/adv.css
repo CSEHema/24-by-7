@@ -1,0 +1,36 @@
+.advantage-card {
+  background: #fff;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12),
+              0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18),
+              0 16px 32px rgba(0, 0, 0, 0.12);
+}
+/* If you are using plain CSS */
+.carousel-slide {
+  width: 100%;          /* Full width */
+  height: 500px !important;        /* Set a fixed height */
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;     /* Prevent content from overflowing */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Keeps image proportions */
+}
+.card-texts {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;     /* show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;         /* depends on line-height */
+}
