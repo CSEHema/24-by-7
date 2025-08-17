@@ -105,4 +105,3 @@ Before you begin, ensure you have the following installed on your system:
 
 ---
 
-Let me know if you'd like me to add sample `.env`, API routes, or deployment instructions as well.
